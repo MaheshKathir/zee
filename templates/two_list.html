@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User List</title>
+</head>
+<body>
+
+<form action="/two_list" method="post" >
+{% csrf_token %}
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="News Paper">
+      <option value="001">001</option>
+      <option value="002">002</option>
+      <option value="003">003</option>
+      <option value="004">004</option>
+  </select>
+
+    <label for="paper">Choose a Name:</label>
+    <select name="News_Paper" id="paper">
+      <option value="TOI">TOI</option>
+      <option value="Hindu">Hindu</option>
+      <option value="Deccan">Deccan</option>
+      <option value="Express">Express</option>
+    </select>
+  <br><br>
+
+  <input type="submit"  value="🚀">
+</form>
+</body>
+</html>
